@@ -36,3 +36,10 @@
     html {
       scroll-behavior: smooth;
     }
+    
+    /* Force le badge hero à passer à la ligne sur petits écrans (badge DaisyUI = nowrap par défaut) */
+    .hero-badge {
+      white-space: normal !important;
+      word-break: break-word;
+      line-height: 1.2;
+    }
