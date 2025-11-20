@@ -276,6 +276,7 @@
 
     function setTheme(theme) {
       document.documentElement.setAttribute("data-theme", theme);
+      ///updateThemeIndicator(theme);
       localStorage.setItem("portfolio-theme", theme);
     }
 
@@ -301,3 +302,13 @@
         });
       });
     })();
+// Mettre à jour l'indicateur de thème
+function updateThemeIndicator(theme) {
+  const themeLabel = document.getElementById('current-theme-label');
+  if (themeLabel) {
+    themeLabel.textContent = theme.charAt(0).toUpperCase() + theme.slice(1);
+  }
+}
+
+// Appeler cette fonction quand le thème change
+// (à intégrer dans votre gestionnaire de thème existant)

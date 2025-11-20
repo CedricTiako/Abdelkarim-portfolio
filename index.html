@@ -147,19 +147,34 @@
             <span class="text-base-content/60">Langues</span>
             <span class="badge badge-outline border-neon text-neon" id="current-lang-label">FR</span>
           </li>
-          <li><button class="lang-switch gap-2" data-lang="fr">🇫🇷 Français</button></li>
-          <li><button class="lang-switch gap-2" data-lang="en">🇬🇧 English</button></li>
-          <li><button class="lang-switch gap-2" data-lang="ar">🇦🇪 العربية</button></li>
+          <li class="overflow-y-auto max-h-[calc(100vh-300px)] sm:max-h-none pr-2 -mr-2">
+            <ul class="space-y-1">
+              <li><button class="btn btn-ghost btn-sm w-full justify-start" data-lang="fr">🇫🇷 Français</button></li>
+              <li><button class="btn btn-ghost btn-sm w-full justify-start" data-lang="en">🇬🇧 English</button></li>
+              <li><button class="btn btn-ghost btn-sm w-full justify-start" data-lang="ar">🇦🇪 العربية</button></li>
+            </ul>
 
-          <li class="divider my-1"></li>
+            <div class="divider my-2"></div>
 
-          <li class="menu-title text-base-content/60">Thème</li>
-          <li>
-            <div class="grid grid-cols-2 gap-2">
-              <button class="btn btn-ghost btn-xs theme-switch justify-start" data-theme-option="light">Light</button>
-              <button class="btn btn-ghost btn-xs theme-switch justify-start" data-theme-option="dark">Dark</button>
-              <button class="btn btn-ghost btn-xs theme-switch justify-start" data-theme-option="cyberpunk">Cyberpunk</button>
-              <button class="btn btn-ghost btn-xs theme-switch justify-start" data-theme-option="synthwave">Synthwave</button>
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="text-base-content/60">Thème</span>
+                <span class="badge badge-outline border-neon text-neon text-xs">Actif: <span id="current-theme-label">Dark</span></span>
+              </div>
+              <div class="grid grid-cols-2 gap-2">
+                <button class="btn btn-ghost btn-sm sm:btn-xs theme-switch justify-start truncate" data-theme-option="light">
+                  <span class="hidden sm:inline">☀️</span> Light
+                </button>
+                <button class="btn btn-ghost btn-sm sm:btn-xs theme-switch justify-start truncate" data-theme-option="dark">
+                  <span class="hidden sm:inline">🌙</span> Dark
+                </button>
+                <button class="btn btn-ghost btn-sm sm:btn-xs theme-switch justify-start truncate" data-theme-option="cyberpunk">
+                  <span class="hidden sm:inline">🤖</span> Cyberpunk
+                </button>
+                <button class="btn btn-ghost btn-sm sm:btn-xs theme-switch justify-start truncate" data-theme-option="synthwave">
+                  <span class="hidden sm:inline">🌈</span> Synthwave
+                </button>
+              </div>
             </div>
           </li>
         </ul>
