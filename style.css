@@ -1,4 +1,4 @@
-body {
+    body {
       font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       background-color: hsl(var(--b1));
       color: hsl(var(--bc));
@@ -36,27 +36,10 @@ body {
     html {
       scroll-behavior: smooth;
     }
-
-/* Badge hero : texte non coupé + centrage sur petits écrans */
-.hero-badge {
-  white-space: nowrap !important;  /* Empêche toute coupure */
-  word-break: normal;              /* Désactive le découpage forcé */
-  
-  line-height: 1.2;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-
-  max-width: 100%;                 /* Laisse le badge s’adapter au texte */
-  gap: 0.25rem;
-  overflow: hidden;                /* Sécurité visuelle */
-}
-
-/* Sur desktop : alignement à gauche si nécessaire */
-@media (min-width: 768px) {
-  .hero-badge {
-    justify-content: flex-start;
-    text-align: left;
-  }
-}
+    
+    /* Force le badge hero à passer à la ligne sur petits écrans (badge DaisyUI = nowrap par défaut) */
+    .hero-badge {
+      white-space: normal !important;
+      word-break: break-word;
+      line-height: 1.5;
+    }

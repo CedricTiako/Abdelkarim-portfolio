@@ -10,7 +10,7 @@
         nav_contact: "Contact",
         theme_label: "Thème",
 
-        hero_badge: "Étudiant en BUT Informatique · Développeur Full Stack",
+        hero_badge: "Développeur Full Stack",
         hero_title_line1: "Bonjour, je suis",
         hero_subtitle: "Étudiant en 2ᵉ année de BUT Informatique à l’IUT d’Annecy, spécialisé en développement logiciel, bases de données et développement web. Je conçois des applications robustes, ergonomiques et performantes.",
         hero_cta_projects: "Voir mes projets",
@@ -97,7 +97,7 @@
         nav_contact: "Contact",
         theme_label: "Theme",
 
-        hero_badge: "BUT Computer Science student · Full Stack Developer",
+        hero_badge: "JuniorFull Stack Developer",
         hero_title_line1: "Hello, I am",
         hero_subtitle: "Second-year BUT Computer Science student at IUT Annecy, specializing in software development, databases and web development. I design robust, ergonomic and high-performance applications.",
         hero_cta_projects: "View my projects",
@@ -184,7 +184,7 @@
   nav_contact: "تواصل معي",
   theme_label: "السمة",
 
-  hero_badge: "طالب BUT علوم الحاسوب · مطور Full Stack",
+  hero_badge: "مطور Full Stack مبتدئ",
   hero_title_line1: "مرحباً، أنا",
   hero_subtitle: "طالب في السنة الثانية من BUT علوم الحاسوب في IUT Annecy، متخصص في تطوير البرمجيات، قواعد البيانات وتطوير الويب. أصمّم تطبيقات قوية، مريحة وسهلة الاستخدام.",
   hero_cta_projects: "عرض مشاريعي",
