@@ -46,106 +46,138 @@
   <div class="halo"></div>
 
   <!-- NAVBAR -->
+
+
+
   <nav class="navbar sticky top-0 z-30 glass border-b border-slate-800/70">
-    <div class="container mx-auto px-4">
-      <div class="flex-1">
-        <a href="#hero" class="btn btn-ghost normal-case text-xl font-display font-bold tracking-tight">
-          <span class="bg-gradient-to-r from-neon to-neonPink bg-clip-text text-transparent">
-            AJ
-          </span>
-          <span class="ml-2 hidden sm:inline" data-i18n="nav_subtitle">
-            / Développeur Full Stack
-          </span>
-        </a>
+  <div class="container mx-auto px-4">
+    <!-- Marque -->
+    <div class="flex-1 min-w-0">
+      <a href="#hero" class="btn btn-ghost normal-case text-xl font-display font-bold tracking-tight px-0">
+        <span class="bg-gradient-to-r from-neon to-neonPink bg-clip-text text-transparent">AJ</span>
+        <span class="ml-2 hidden sm:inline truncate" data-i18n="nav_subtitle">/ Développeur Full Stack</span>
+      </a>
+    </div>
+
+    <!-- Menu desktop -->
+    <div class="flex-none hidden md:flex items-center gap-2">
+      <a href="#hero" class="btn btn-ghost btn-xs md:btn-sm" data-i18n="nav_home">Accueil</a>
+      <a href="#about" class="btn btn-ghost btn-xs md:btn-sm" data-i18n="nav_about">À propos</a>
+      <a href="#skills" class="btn btn-ghost btn-xs md:btn-sm" data-i18n="nav_skills">Compétences</a>
+      <a href="#projects" class="btn btn-ghost btn-xs md:btn-sm" data-i18n="nav_projects">Projets</a>
+      <a href="#experience" class="btn btn-ghost btn-xs md:btn-sm" data-i18n="nav_experience">Exp. & Form.</a>
+      <a href="#contact" class="btn btn-primary btn-xs md:btn-sm shadow-neon-soft" data-i18n="nav_contact">Contact</a>
+
+      <!-- Lang switcher -->
+      <div class="dropdown dropdown-end">
+        <label tabindex="0" class="btn btn-ghost btn-xs md:btn-sm gap-1">
+          🌐 <span id="current-lang-label">FR</span>
+        </label>
+        <ul tabindex="0" class="dropdown-content menu p-2 shadow glass rounded-box w-36">
+          <li><button class="btn btn-ghost btn-xs justify-start lang-switch" data-lang="fr">🇫🇷 Français</button></li>
+          <li><button class="btn btn-ghost btn-xs justify-start lang-switch" data-lang="en">🇬🇧 English</button></li>
+          <li><button class="btn btn-ghost btn-xs justify-start lang-switch" data-lang="ar">🇦🇪 العربية</button></li>
+        </ul>
       </div>
 
-      <!-- Desktop menu -->
-      <div class="flex-none hidden md:flex gap-2 items-center">
-        <a href="#hero" class="btn btn-ghost btn-sm" data-i18n="nav_home">Accueil</a>
-        <a href="#about" class="btn btn-ghost btn-sm" data-i18n="nav_about">À propos</a>
-        <a href="#skills" class="btn btn-ghost btn-sm" data-i18n="nav_skills">Compétences</a>
-        <a href="#projects" class="btn btn-ghost btn-sm" data-i18n="nav_projects">Projets</a>
-        <a href="#experience" class="btn btn-ghost btn-sm" data-i18n="nav_experience">Expérience & Formation</a>
-        <a href="#contact" class="btn btn-primary btn-sm shadow-neon-soft" data-i18n="nav_contact">Contact</a>
-
-        <!-- Lang switcher -->
-        <div class="dropdown dropdown-end">
-          <label tabindex="0" class="btn btn-ghost btn-sm gap-1">
-            🌐 <span id="current-lang-label">FR</span>
-          </label>
-          <ul tabindex="0" class="dropdown-content menu p-2 shadow glass rounded-box w-32">
-            <li><button class="btn btn-ghost btn-sm justify-start lang-switch" data-lang="fr">🇫🇷 Français</button></li>
-            <li><button class="btn btn-ghost btn-sm justify-start lang-switch" data-lang="en">🇬🇧 English</button></li>
-            <li><button class="btn btn-ghost btn-sm justify-start lang-switch" data-lang="ar">🇦🇪 العربية</button></li>
-          </ul>
-        </div>
-
-        <!-- Theme switcher -->
-        <div class="dropdown dropdown-end">
-          <label tabindex="0" class="btn btn-ghost btn-sm gap-1">
-            🎛 <span data-i18n="theme_label">Thème</span>
-          </label>
-          <ul tabindex="0" class="dropdown-content menu p-2 shadow glass rounded-box w-40">
-            <li><button class="btn btn-ghost btn-sm theme-switch justify-start" data-theme-option="light">☀️ Light</button></li>
-            <li><button class="btn btn-ghost btn-sm theme-switch justify-start" data-theme-option="dark">🌙 Dark</button></li>
-            <li><button class="btn btn-ghost btn-sm theme-switch justify-start" data-theme-option="cyberpunk">⚡ Cyberpunk</button></li>
-            <li><button class="btn btn-ghost btn-sm theme-switch justify-start" data-theme-option="synthwave">🔮 Synthwave</button></li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Mobile menu -->
-      <div class="flex-none md:hidden">
-        <div class="dropdown dropdown-end">
-          <label tabindex="0" class="btn btn-ghost btn-square">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-                 viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
-                    d="M4 6h16M4 12h16M4 18h16"/>
-            </svg>
-          </label>
-          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[40] p-2 shadow glass rounded-box w-52">
-            <li><a href="#hero" data-i18n="nav_home">Accueil</a></li>
-            <li><a href="#about" data-i18n="nav_about">À propos</a></li>
-            <li><a href="#skills" data-i18n="nav_skills">Compétences</a></li>
-            <li><a href="#projects" data-i18n="nav_projects">Projets</a></li>
-            <li><a href="#experience" data-i18n="nav_experience">Expérience & Formation</a></li>
-            <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
-            <li class="menu-title">
-                <span>🌐 Langues</span>
-            </li>
-
-            <li>
-                <button class="lang-switch" data-lang="fr">🇫🇷 Français</button>
-            </li>
-
-            <li>
-                <button class="lang-switch" data-lang="en">🇬🇧 English</button>
-            </li>
-
-            <li>
-                <button class="lang-switch" data-lang="ar">🇦🇪 العربية</button>
-            </li>
-
-            <li class="menu-title"><span>Thème</span></li>
-            <li><button class="theme-switch" data-theme-option="light">☀️ Light</button></li>
-            <li><button class="theme-switch" data-theme-option="dark">🌙 Dark</button></li>
-            <li><button class="theme-switch" data-theme-option="cyberpunk">⚡ Cyberpunk</button></li>
-            <li><button class="theme-switch" data-theme-option="synthwave">🔮 Synthwave</button></li>
-          </ul>
-        </div>
+      <!-- Theme switcher -->
+      <div class="dropdown dropdown-end">
+        <label tabindex="0" class="btn btn-ghost btn-xs md:btn-sm gap-1">
+          🎨 <span data-i18n="theme_label">Thème</span>
+        </label>
+        <ul tabindex="0" class="dropdown-content menu p-2 shadow glass rounded-box w-44">
+          <li><button class="btn btn-ghost btn-xs theme-switch justify-start" data-theme-option="light">Light</button></li>
+          <li><button class="btn btn-ghost btn-xs theme-switch justify-start" data-theme-option="dark">Dark</button></li>
+          <li><button class="btn btn-ghost btn-xs theme-switch justify-start" data-theme-option="cyberpunk">Cyberpunk</button></li>
+          <li><button class="btn btn-ghost btn-xs theme-switch justify-start" data-theme-option="synthwave">Synthwave</button></li>
+        </ul>
       </div>
     </div>
-  </nav>
+
+    <!-- Menu mobile -->
+<div class="flex-none md:hidden">
+  <div class="drawer">
+    <input id="mobile-drawer" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content">
+      <label for="mobile-drawer" class="btn btn-ghost btn-square btn-sm sm:btn-md">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </label>
+    </div>
+
+    <div class="drawer-side z-[90]">
+      <!-- Overlay opaque -->
+      <label for="mobile-drawer" class="drawer-overlay bg-black/80"></label>
+
+      <div class="bg-base-100 text-base-content border-r border-slate-700/60 shadow-2xl w-[78vw] max-w-sm min-h-full flex flex-col">
+        <!-- Header -->
+        <div class="flex items-center justify-between px-4 py-3 border-b border-slate-800/60">
+          <div>
+            <p class="text-xs uppercase tracking-[0.18em] text-slate-500">Menu</p>
+            <p class="text-sm font-semibold text-slate-200">Navigation & préférences</p>
+          </div>
+          <label for="mobile-drawer" class="btn btn-ghost btn-square btn-xs">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </label>
+        </div>
+
+        <!-- Contenu -->
+        <ul class="menu menu-sm p-4 gap-3 flex-1 overflow-y-auto">
+          <li class="menu-title text-xs uppercase tracking-[0.2em] text-slate-500">Navigation</li>
+          <li><a href="#hero" class="font-semibold" data-i18n="nav_home">Accueil</a></li>
+          <li><a href="#about" data-i18n="nav_about">À propos</a></li>
+          <li><a href="#skills" data-i18n="nav_skills">Compétences</a></li>
+          <li><a href="#projects" data-i18n="nav_projects">Projets</a></li>
+          <li><a href="#experience" data-i18n="nav_experience">Exp. & Form.</a></li>
+          <li><a href="#contact" class="text-neon font-semibold" data-i18n="nav_contact">Contact</a></li>
+
+          <li class="divider my-1"></li>
+
+          <li class="menu-title flex items-center justify-between text-slate-500">
+            <span>Langues</span>
+            <span class="badge badge-outline border-neon text-neon" id="current-lang-label">FR</span>
+          </li>
+          <li><button class="lang-switch gap-2" data-lang="fr">🇫🇷 Français</button></li>
+          <li><button class="lang-switch gap-2" data-lang="en">🇬🇧 English</button></li>
+          <li><button class="lang-switch gap-2" data-lang="ar">🇦🇪 العربية</button></li>
+
+          <li class="divider my-1"></li>
+
+          <li class="menu-title text-slate-500">Thème</li>
+          <li>
+            <div class="grid grid-cols-2 gap-2">
+              <button class="btn btn-ghost btn-xs theme-switch justify-start" data-theme-option="light">Light</button>
+              <button class="btn btn-ghost btn-xs theme-switch justify-start" data-theme-option="dark">Dark</button>
+              <button class="btn btn-ghost btn-xs theme-switch justify-start" data-theme-option="cyberpunk">Cyberpunk</button>
+              <button class="btn btn-ghost btn-xs theme-switch justify-start" data-theme-option="synthwave">Synthwave</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  </div>
+</nav>
 
   <!-- HERO -->
   <section id="hero" class="py-20 md:py-28">
     <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
       <!-- Texte -->
       <div class="flex-1 space-y-6">
-        <span class="badge badge-outline border-neon text-neon tracking-wide" data-i18n="hero_badge">
-          Étudiant en BUT Informatique · Développeur Full Stack
-        </span>
+  
+        <span
+  class="badge badge-outline border-neon text-neon tracking-wide hero-badge inline-flex items-center whitespace-normal break-words max-w-full text-xs sm:text-sm px-3 py-1 leading-tight"
+  data-i18n="hero_badge">
+  Étudiant en BUT Informatique · Développeur Full Stack
+</span>
+
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight font-display">
           <span data-i18n="hero_title_line1">Bonjour, je suis</span>
           <span class="block bg-gradient-to-r from-neon to-neonPink bg-clip-text text-transparent">
