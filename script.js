@@ -271,7 +271,9 @@
           el.innerHTML = dict[key];
         }
       });
-      document.getElementById("current-lang-label").textContent = lang.toUpperCase();
+      document.querySelectorAll(".current-lang-label").forEach((el) => {
+        el.textContent = lang.toUpperCase();
+      });
     }
 
     function setTheme(theme) {
